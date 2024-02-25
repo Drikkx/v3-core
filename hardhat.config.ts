@@ -3,6 +3,9 @@ import '@nomiclabs/hardhat-ethers'
 import '@nomiclabs/hardhat-waffle'
 import '@nomiclabs/hardhat-etherscan'
 
+import * as dotenv from "dotenv";
+dotenv.config({ path: __dirname + '/.env' });
+
 export default {
   defaultNetwork: "skale",
   networks: {

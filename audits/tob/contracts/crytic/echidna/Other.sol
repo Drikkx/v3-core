@@ -1,4 +1,4 @@
-pragma solidity =0.7.6;
+pragma solidity 0.8.22;
 
 import '../../../../../contracts/libraries/SqrtPriceMath.sol';
 import '../../../../../contracts/libraries/TickMath.sol';
