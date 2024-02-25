@@ -37,6 +37,7 @@ contract UniswapV3Factory is IUniswapV3Factory, UniswapV3PoolDeployer, NoDelegat
         address tokenB,
         uint24 fee
     ) external override noDelegateCall returns (address pool) {
+        require(msg.sender == owner);
         require(tokenA != tokenB);
         (address token0, address token1) = tokenA < tokenB ? (tokenA, tokenB) : (tokenB, tokenA);
         require(token0 != address(0));
